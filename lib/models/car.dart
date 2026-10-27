@@ -15,9 +15,9 @@ class Car {
 
   factory Car.fromJson(Map<String, dynamic> json) => Car(
         id: json['id'] ?? 0,
-        name: json['name'] ?? json['model'] ?? 'Unknown',
+        name: json['title'] ?? 'Unknown',
         price: (json['price'] ?? 0).toDouble(),
-        image: json['image'] ?? '',
-        description: json['description'] ?? 'Lorem ipsum dolor sit amet...',
+        image: json['thumbnail'] ?? '',
+        description: json['description'] ?? 'No description',
       );
 }
